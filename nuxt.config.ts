@@ -3,11 +3,11 @@ export default defineNuxtConfig({
     compatibilityDate: "2024-04-03",
     devtools: { enabled: true },
     modules: [
-        "nuxt-electron",
+        "@nuxtjs/color-mode",
+        "@formkit/auto-animate",
     ],
-    electron: {
-        build: [{
-            entry: "electron/main.js",
-        }]
-    }
+    css: [
+        "./assets/css/main.css",
+        "@fortawesome/fontawesome-svg-core/styles.css",
+    ],
 });
